@@ -1,0 +1,17 @@
+        itemArray.each(function (i) {
+            $(this).mouseenter(function () {
+                console.log("write to console, pls");
+                console.log(this);
+                console.log($(this));
+                $('#heroimage').html('');
+                $('#herodesc').html('');
+                $('#heroprice').html('');
+                var bigImage = $('.hover')[i].src;
+                $('#heroimage').append('<img src=' + bigImage + ' alt="photo" > ');
+                var itemDesc = $('p.desc',this).html();
+                $('#herodesc').append('<p>' + itemDesc + '</p>');
+                var itemPrice = $('p.priceTag',this).html();
+                $('#heroprice').append('<p>' + itemPrice + '</p>');
+
+            });
+        });
