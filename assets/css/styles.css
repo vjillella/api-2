@@ -91,6 +91,7 @@ p.desc {
 
 p.priceTag {
     font-weight: bold;
+    text-align: center;
 }
 
 .viewBtn {
